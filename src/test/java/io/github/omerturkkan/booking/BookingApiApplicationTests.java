@@ -3,7 +3,7 @@ package io.github.omerturkkan.booking;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(properties = "spring.docker.compose.skip.in-tests=false")
 class BookingApiApplicationTests {
 
 	@Test
